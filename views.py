@@ -13,7 +13,7 @@ def home():
         elif log == 'warning':
             app.logger.warning('Warning occurred.')
         elif log == 'error':
-            app.logger.error('Error occurred.')
+            app.logger('Error occurred.')
         elif log == 'critical':
             app.logger.critical('Critical error occurred.')
     return render_template(
